@@ -214,6 +214,9 @@ header p {
 
 /* Smaller Screen editing */
 @media screen and (max-width: 768px) {
+  body{
+    overflow-x: hidden;
+  }
   .nav-bar{
     width: 100%
   }
