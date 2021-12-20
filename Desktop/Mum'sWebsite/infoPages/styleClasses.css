@@ -235,6 +235,9 @@ header p {
     width: 100%;
     margin: 5%;
   }
+  .nav-items li a{
+    height: 5%;
+  }
   .burger{
     display: block;
     cursor: pointer;
