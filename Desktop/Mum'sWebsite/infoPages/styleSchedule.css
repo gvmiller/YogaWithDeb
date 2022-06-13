@@ -122,6 +122,11 @@ header h1 {
     border: 1px solid #000000;
     text-shadow: 1px 1px 2px #000000;
 }
+.red {
+    font-style: normal;
+    font-weight: normal;
+    color: #ff0000;
+}
 
 header h3 {
     font-family: "Rockwell" sans-serif;
