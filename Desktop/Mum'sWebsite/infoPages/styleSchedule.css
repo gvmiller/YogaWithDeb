@@ -147,6 +147,58 @@ header ul {
     margin-bottom: 50px;
 }
 
+.class-times {
+  list-style: none;
+  padding: 0 10%;
+  margin: 0 auto;
+}
+
+.class-times li {
+  display: grid;
+  grid-template-columns: auto 1fr; /* Month takes auto width, dates take remaining space */
+  gap: 40%; /* Space between columns */
+  align-items: start; /* Align items to the top */
+  padding: 10px 0;
+  font-size: 2rem;
+}
+
+.month {
+  font-weight: bold;
+  min-width: 50px; /* Ensure all months line up */
+}
+
+.dates {
+  text-align: left; /* Align dates to the right */
+}
+
+/* Media Query for Smaller Screens */
+@media (max-width: 768px) {
+  .class-times {
+    padding: 0 5%; /* Reduce side padding on smaller screens */
+  }
+  .class-times li {
+    grid-template-columns: auto auto; /* Adjust to two auto columns */
+    gap: 5%; /* Smaller gap for narrower screens */
+    font-size: 1.8rem; /* Slightly smaller text size */
+  }
+}
+
+/* Media Query for Very Small Screens */
+@media (max-width: 480px) {
+  .class-times li {
+    display: flex; /* Switch to flexbox for stacking */
+    flex-direction: column; /* Stack items vertically */
+    align-items: flex-start; /* Align text to the left */
+    font-size: 1.5rem; /* Smaller text size */
+    gap: 5px; /* Minimal gap between items */
+  }
+
+  .dates {
+    margin-left: 0; /* Remove any extra spacing for tight screens */
+  }
+}
+
+
 header li {
     font-family: "Rockwell" sans-serif;
     font-style: normal;
